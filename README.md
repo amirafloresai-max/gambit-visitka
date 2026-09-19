@@ -87,3 +87,4 @@ assets/       — фотографии, скриншоты платформы, �
 | `platform-board.webp` | скриншот доски | 1600 × 758 |
 | `platform-dashboard.webp` | скриншот кабинета | 1600 × 762 |
 | `logo.webp`, `logo.png`, `favicon.png` | логотип клуба | квадрат |
+<!-- trigger pages -->
