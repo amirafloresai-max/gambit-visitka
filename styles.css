@@ -201,8 +201,24 @@ h1 .gold{
 .stat span{font-size:12.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
 
 /* Объёмный конь */
-.hero-figure{display:flex;justify-content:center;perspective:1500px}
-.knight-stage{position:relative;width:min(340px,70vw);aspect-ratio:1/1.1;display:grid;place-items:center;transform-style:preserve-3d;animation:float 7s ease-in-out infinite}
+.hero-role{
+  margin-top:20px;color:var(--gold);font-size:13px;font-weight:600;
+  letter-spacing:.14em;text-transform:uppercase;
+}
+.hero-figure{position:relative;perspective:1500px}
+.hero-photo{position:relative;margin:0}
+.hero-photo img{
+  display:block;width:100%;border-radius:var(--radius-lg);
+  border:1px solid var(--line-soft);box-shadow:var(--shadow);
+  filter:saturate(1.04) contrast(1.03);
+  transform:rotate(1.2deg);transition:transform 1.1s var(--ease),border-color 1.1s var(--ease);
+}
+.hero-photo:hover img{transform:rotate(0);border-color:var(--line)}
+.hero-photo figcaption{
+  margin-top:20px;padding-left:2px;
+  font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);
+}
+.knight-stage{position:absolute;left:-104px;bottom:-4px;width:min(168px,32vw);z-index:2;aspect-ratio:1/1.1;display:grid;place-items:center;transform-style:preserve-3d;animation:float 7s ease-in-out infinite;pointer-events:none}
 @keyframes float{0%,100%{transform:rotateX(6deg) translateY(-10px)}50%{transform:rotateX(6deg) translateY(10px)}}
 .knight-3d{
   position:relative;width:78%;height:78%;transform-style:preserve-3d;
@@ -234,6 +250,32 @@ h1 .gold{
 .section-lead{margin-top:22px;color:rgba(243,238,229,.7);font-size:18px;max-width:52em}
 
 /* ---------- Карточки возможностей ---------- */
+.sub-head{
+  font-size:clamp(24px,3vw,34px);margin:72px 0 30px;display:flex;align-items:center;gap:18px;
+}
+.sub-head::after{content:"";flex:1;height:1px;background:linear-gradient(90deg,var(--line),transparent)}
+
+/* ---------- Достижения ---------- */
+.ach{display:grid;grid-template-columns:repeat(auto-fit,minmax(215px,1fr));gap:18px}
+.ach-card{
+  position:relative;padding:30px 24px;border-radius:var(--radius);text-align:center;overflow:hidden;
+  background:linear-gradient(170deg,rgba(255,255,255,.06),rgba(255,255,255,.015));
+  border:1px solid var(--line-soft);
+  transition:transform .6s var(--ease),border-color .6s var(--ease);
+}
+.ach-card:hover{transform:translateY(-5px);border-color:var(--line)}
+.ach-card::before{
+  content:"";position:absolute;left:50%;top:0;width:60%;height:1px;transform:translateX(-50%);
+  background:linear-gradient(90deg,transparent,var(--gold),transparent);opacity:.5;
+}
+.ach-value{
+  display:block;font-family:"Cormorant Garamond",serif;font-size:clamp(30px,3.4vw,42px);
+  font-weight:600;line-height:1.05;margin-bottom:10px;
+  background:linear-gradient(120deg,var(--gold-hi),var(--gold) 50%,var(--gold-deep));
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+}
+.ach-card span{display:block;font-size:14.5px;color:rgba(243,238,229,.66);line-height:1.5}
+
 .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(285px,1fr));gap:20px}
 .card{
   position:relative;padding:34px 30px 32px;border-radius:var(--radius);
@@ -282,18 +324,6 @@ h1 .gold{
 .timeline h3{margin-bottom:8px}
 .timeline p{color:rgba(243,238,229,.64);font-size:15.5px}
 
-.pills{display:grid;grid-template-columns:repeat(auto-fit,minmax(235px,1fr));gap:18px}
-.pill{
-  position:relative;padding:26px 24px 24px;border-radius:var(--radius);overflow:hidden;
-  background:var(--panel);border:1px solid var(--line-soft);
-  transition:transform .6s var(--ease),border-color .6s var(--ease);
-}
-.pill:hover{transform:translateY(-5px);border-color:var(--line)}
-.pill-ico{position:absolute;right:-14px;bottom:-16px;width:82px;height:96px;fill:rgba(230,193,105,.07);transition:transform .8s var(--ease),fill .6s}
-.pill:hover .pill-ico{transform:translateY(-6px) rotate(-6deg);fill:rgba(230,193,105,.13)}
-.pill b{display:block;font-size:16.5px;font-weight:600;margin-bottom:6px;position:relative}
-.pill span{display:block;font-size:14.5px;color:rgba(243,238,229,.6);position:relative;line-height:1.55}
-
 /* ---------- Тренер ---------- */
 .coach-grid{display:grid;grid-template-columns:minmax(0,.95fr) minmax(0,1.05fr);gap:60px;align-items:center}
 .coach-photo{position:relative}
@@ -312,7 +342,9 @@ h1 .gold{
   fill:rgba(230,193,105,.13);filter:drop-shadow(0 20px 30px rgba(0,0,0,.6));
   animation:bob 10s ease-in-out infinite alternate;
 }
+.coach-grid + .container .sub-head{margin-top:88px}
 .coach-role{color:var(--gold);font-size:12.5px;letter-spacing:.1em;text-transform:uppercase;margin:16px 0 26px;font-weight:600}
+.coach-copy h2{margin-bottom:26px}
 .coach-copy p{color:rgba(243,238,229,.74);margin-bottom:18px;font-size:17px}
 .ticks{list-style:none;margin:30px 0;padding:0;display:grid;gap:14px}
 .ticks li{position:relative;padding-left:32px;font-size:15.5px;color:rgba(243,238,229,.7)}
@@ -322,20 +354,28 @@ h1 .gold{
 }
 
 /* ---------- Клуб ---------- */
-.club{position:relative;min-height:70svh;display:grid;place-items:center;overflow:hidden;isolation:isolate;padding:120px 0}
-.club-media{position:absolute;inset:-12% 0;z-index:-2}
-.club-media img{width:100%;height:100%;object-fit:cover;will-change:transform;filter:brightness(1.06) saturate(1.05)}
-.club::after{
-  content:"";position:absolute;inset:0;z-index:-1;
-  background:linear-gradient(180deg,var(--ink) 0%,rgba(11,11,13,.72) 30%,rgba(11,11,13,.72) 70%,var(--ink) 100%);
+.club{position:relative;display:grid;place-items:center;overflow:hidden;isolation:isolate;padding:clamp(90px,12vw,140px) 0;background:var(--ink)}
+.club-board{
+  position:absolute;inset:0;z-index:-2;opacity:.45;
+  background-image:
+    linear-gradient(45deg,rgba(230,193,105,.05) 25%,transparent 25%,transparent 75%,rgba(230,193,105,.05) 75%),
+    linear-gradient(45deg,rgba(230,193,105,.05) 25%,transparent 25%,transparent 75%,rgba(230,193,105,.05) 75%);
+  background-size:140px 140px;background-position:0 0,70px 70px;
+  -webkit-mask-image:radial-gradient(60% 60% at 50% 50%,#000,transparent 75%);
+  mask-image:radial-gradient(60% 60% at 50% 50%,#000,transparent 75%);
 }
-.club-inner{text-align:center;max-width:860px}
+.club::after{content:"";position:absolute;inset:0;z-index:-1;background:radial-gradient(55% 55% at 50% 50%,rgba(230,193,105,.1),transparent 70%)}
+.club-inner{text-align:center;max-width:880px;display:flex;flex-direction:column;align-items:center}
+.club-logo{
+  width:clamp(84px,9vw,118px);height:auto;margin-bottom:34px;
+  filter:drop-shadow(0 18px 40px rgba(0,0,0,.7));animation:float 8s ease-in-out infinite;
+}
 .club blockquote{
   margin:0;font-family:"Cormorant Garamond",serif;font-style:italic;font-weight:500;
-  font-size:clamp(26px,3.6vw,44px);line-height:1.3;color:var(--cream);
-  text-shadow:0 8px 40px rgba(0,0,0,.8);
+  font-size:clamp(25px,3.4vw,42px);line-height:1.32;color:var(--cream);
 }
-.club-sign{margin-top:26px;font-size:12.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold)}
+.club-sign{margin-top:26px;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
+.club .link-gold{margin-top:22px}
 
 /* ---------- Стоимость ---------- */
 .price-wrap{position:relative;display:flex;justify-content:center;isolation:isolate}
@@ -424,9 +464,10 @@ h1 .gold{
 
 /* ---------- Адаптив ---------- */
 @media (max-width:980px){
-  .hero-inner{grid-template-columns:1fr;gap:20px}
+  .hero-inner{grid-template-columns:1fr;gap:34px}
   .hero-figure{order:-1}
-  .knight-stage{width:min(230px,52vw)}
+  .knight-stage{left:auto;right:-6px;bottom:-10px;width:min(124px,25vw)}
+  .hero-photo figcaption{max-width:calc(100% - 130px);line-height:1.5}
   .coach-grid{grid-template-columns:1fr;gap:44px}
   .photo-piece{width:96px;height:112px;right:-14px;bottom:-24px}
 }
@@ -457,7 +498,7 @@ h1 .gold{
   .header-actions{gap:10px}
   .burger{width:38px;height:38px}
   .eyebrow{font-size:10px;letter-spacing:.18em;margin-bottom:18px}
-  .knight-stage{width:min(210px,52vw)}
+  .knight-stage{right:-4px;bottom:-8px;width:min(100px,24vw)}
   .lead{font-size:17px}
   .container{width:min(100% - 32px,var(--container))}
   .hero{padding:130px 0 90px}

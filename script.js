@@ -12,17 +12,19 @@
      1. Переключатель языка RU / UA
      --------------------------------------------------------- */
   var TITLES = {
-    ru: 'Онлайн-шахматы для детей — тренер Павел Рудяков, клуб «Гамбит»',
-    uk: 'Онлайн-шахи для дітей — тренер Павло Рудяков, клуб «Гамбіт»'
+    uk: 'Рудяков Павло Павлович — тренер із шахів, онлайн-група для дітей',
+    ru: 'Рудяков Павел Павлович — тренер по шахматам, онлайн-группа для детей'
   };
 
+  // Основной язык страницы — украинский (текст лежит прямо в HTML),
+  // русский перевод хранится в атрибуте data-ru рядом с ним.
   function applyLang(lang) {
-    $$('[data-uk]').forEach(function (el) {
-      if (!el.dataset.ru) el.dataset.ru = el.textContent;
-      el.textContent = lang === 'uk' ? el.dataset.uk : el.dataset.ru;
+    $$('[data-ru]').forEach(function (el) {
+      if (el.dataset.ukText === undefined) el.dataset.ukText = el.textContent;
+      el.textContent = lang === 'ru' ? el.dataset.ru : el.dataset.ukText;
     });
-    document.documentElement.lang = lang === 'uk' ? 'uk' : 'ru';
-    document.title = TITLES[lang] || TITLES.ru;
+    document.documentElement.lang = lang === 'ru' ? 'ru' : 'uk';
+    document.title = TITLES[lang] || TITLES.uk;
     $$('.lang-btn').forEach(function (b) {
       b.classList.toggle('is-active', b.dataset.lang === lang);
     });
@@ -35,7 +37,7 @@
 
   var saved = null;
   try { saved = localStorage.getItem('gambit-lang'); } catch (e) {}
-  if (saved === 'uk') applyLang('uk');
+  if (saved === 'ru') applyLang('ru');
 
   /* ---------------------------------------------------------
      2. Шапка: фон при прокрутке, активный пункт, бургер

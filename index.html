@@ -1,17 +1,17 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="uk">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Онлайн-шахматы для детей — тренер Павел Рудяков, клуб «Гамбит»</title>
-<meta name="description" content="Онлайн-группа по шахматам для детей. Живые занятия с тренером клуба «Гамбит»: видео- и аудиосвязь, ходы прямо на виртуальной доске. Два раза в неделю по 60 минут, 2 000 ₴ в месяц.">
+<title>Рудяков Павло Павлович — тренер із шахів, онлайн-група для дітей</title>
+<meta name="description" content="Рудяков Павло Павлович — тренер із шахів клубу «Гамбіт» (Київ). Онлайн-група для дітей: живий відео- та аудіозв’язок, ходи на віртуальній дошці. Двічі на тиждень по 60 хвилин, 2 000 ₴ на місяць.">
 <meta name="theme-color" content="#0B0B0D">
 <link rel="icon" href="assets/favicon.png" type="image/png">
 <link rel="apple-touch-icon" href="assets/favicon.png">
 
 <meta property="og:type" content="website">
-<meta property="og:title" content="Онлайн-шахматы для детей — тренер Павел Рудяков">
-<meta property="og:description" content="Живые занятия в группе на современной шахматной платформе: видео, голос и виртуальная доска. 2 раза в неделю по 60 минут.">
+<meta property="og:title" content="Рудяков Павло Павлович — тренер із шахів">
+<meta property="og:description" content="Живі заняття в групі на сучасній шаховій платформі: відео, голос і віртуальна дошка. Двічі на тиждень по 60 хвилин.">
 <meta property="og:image" content="assets/group.webp">
 <meta name="twitter:card" content="summary_large_image">
 
@@ -63,28 +63,28 @@
 <!-- ============ ШАПКА ============ -->
 <header class="site-header" id="header">
   <div class="container header-inner">
-    <a class="brand" href="#hero" aria-label="Гамбит">
-      <img src="assets/logo.webp" alt="Логотип шахматного клуба «Гамбит»" width="46" height="46" loading="eager">
+    <a class="brand" href="#hero" aria-label="Гамбіт">
+      <img src="assets/logo.webp" alt="Логотип шахового клубу «Гамбіт»" width="46" height="46" loading="eager">
       <span class="brand-text">
-        <b data-uk="Гамбіт">Гамбит</b>
-        <i data-uk="Шаховий клуб · Київ">Шахматный клуб · Киев</i>
+        <b data-ru="Гамбит">Гамбіт</b>
+        <i data-ru="Шахматный клуб · Киев">Шаховий клуб · Київ</i>
       </span>
     </a>
 
     <nav class="nav" id="nav">
-      <a href="#platform" data-uk="Платформа">Платформа</a>
-      <a href="#format" data-uk="Формат">Формат</a>
-      <a href="#coach" data-uk="Тренер">Тренер</a>
-      <a href="#price" data-uk="Вартість">Стоимость</a>
-      <a href="#faq" data-uk="Питання">Вопросы</a>
+      <a href="#coach" data-ru="Тренер">Тренер</a>
+      <a href="#method" data-ru="Занятия">Заняття</a>
+      <a href="#platform" data-ru="Платформа">Платформа</a>
+      <a href="#price" data-ru="Стоимость">Вартість</a>
+      <a href="#faq" data-ru="Вопросы">Питання</a>
     </nav>
 
     <div class="header-actions">
-      <div class="lang" role="group" aria-label="Язык сайта">
-        <button type="button" class="lang-btn is-active" data-lang="ru">RU</button>
-        <button type="button" class="lang-btn" data-lang="uk">UA</button>
+      <div class="lang" role="group" aria-label="Мова сайту">
+        <button type="button" class="lang-btn" data-lang="ru">RU</button>
+        <button type="button" class="lang-btn is-active" data-lang="uk">UA</button>
       </div>
-      <a class="btn btn-gold btn-sm" href="#contact" data-uk="Записатися">Записаться</a>
+      <a class="btn btn-gold btn-sm" href="#contact" data-ru="Записаться">Записатися</a>
       <button class="burger" id="burger" type="button" aria-label="Меню" aria-expanded="false"><span></span><span></span><span></span></button>
     </div>
   </div>
@@ -92,45 +92,53 @@
 
 <main>
 
-<!-- ============ ГЕРОЙ ============ -->
+<!-- ============ ГЕРОЙ: тренер и фото с детьми ============ -->
 <section class="hero" id="hero">
   <div class="hero-board" id="heroBoard" aria-hidden="true"></div>
   <div class="hero-glow" aria-hidden="true"></div>
   <div class="floaters" id="floaters" aria-hidden="true">
-    <svg class="floater" data-depth="26" style="--x:6%;  --y:22%; --s:80px;  --r:-14deg"><use href="#pc-pawn"/></svg>
-    <svg class="floater" data-depth="44" style="--x:87%; --y:16%; --s:104px; --r:12deg"><use href="#pc-bishop"/></svg>
-    <svg class="floater" data-depth="18" style="--x:78%; --y:70%; --s:88px;  --r:-8deg"><use href="#pc-rook"/></svg>
-    <svg class="floater" data-depth="34" style="--x:13%; --y:72%; --s:96px;  --r:10deg"><use href="#pc-queen"/></svg>
-    <svg class="floater" data-depth="52" style="--x:50%; --y:8%;  --s:64px;  --r:-6deg"><use href="#pc-king"/></svg>
+    <svg class="floater" data-depth="26" style="--x:5%;  --y:26%; --s:76px;  --r:-14deg"><use href="#pc-pawn"/></svg>
+    <svg class="floater" data-depth="44" style="--x:93%; --y:12%; --s:92px;  --r:12deg"><use href="#pc-bishop"/></svg>
+    <svg class="floater" data-depth="18" style="--x:12%; --y:78%; --s:84px;  --r:-8deg"><use href="#pc-rook"/></svg>
+    <svg class="floater" data-depth="52" style="--x:45%; --y:6%;  --s:58px;  --r:-6deg"><use href="#pc-king"/></svg>
   </div>
 
   <div class="container hero-inner">
     <div class="hero-copy">
-      <p class="eyebrow" data-reveal data-uk="Шаховий клуб «Гамбіт» · від 2009 року">Шахматный клуб «Гамбит» · с 2009 года</p>
+      <p class="eyebrow" data-reveal data-ru="Онлайн-группа по шахматам для детей">Онлайн-група із шахів для дітей</p>
 
       <h1 data-reveal data-delay="1">
-        <span class="line" data-uk="Онлайн-шахи">Онлайн-шахматы</span>
-        <span class="line gold" data-uk="для дітей">для детей</span>
+        <span class="line" data-ru="Рудяков">Рудяков</span>
+        <span class="line gold" data-ru="Павел Павлович">Павло Павлович</span>
       </h1>
 
-      <p class="lead" data-reveal data-delay="2" data-uk="Живі заняття у невеликій групі: відео, голос і віртуальна дошка, на якій дитина сама робить ходи. Двічі на тиждень по годині — з тренером клубу «Гамбіт».">
-        Живые занятия в небольшой группе: видео, голос и виртуальная доска, на которой ребёнок сам делает ходы. Два раза в неделю по часу — с тренером клуба «Гамбит».
+      <p class="hero-role" data-reveal data-delay="2" data-ru="Тренер по шахматам · шахматный клуб «Гамбит», Киев">
+        Тренер із шахів · шаховий клуб «Гамбіт», Київ
       </p>
 
-      <div class="hero-cta" data-reveal data-delay="3">
-        <a class="btn btn-gold" href="#contact" data-uk="Записати дитину">Записать ребёнка</a>
-        <a class="btn btn-ghost" href="#platform" data-uk="Як усе влаштовано">Как всё устроено</a>
+      <p class="lead" data-reveal data-delay="3" data-ru="Учу детей шахматам в клубе «Гамбит» — очно и онлайн. Онлайн-группа: два раза в неделю по часу, живая видео- и аудиосвязь и виртуальная доска, на которой ребёнок сам делает ходы.">
+        Навчаю дітей шахів у клубі «Гамбіт» — очно та онлайн. Онлайн-група: двічі на тиждень по годині, живий відео- та аудіозв’язок і віртуальна дошка, на якій дитина сама робить ходи.
+      </p>
+
+      <div class="hero-cta" data-reveal data-delay="4">
+        <a class="btn btn-gold" href="#contact" data-ru="Записать ребёнка">Записати дитину</a>
+        <a class="btn btn-ghost" href="#coach" data-ru="Обо мне как о тренере">Про мене як тренера</a>
       </div>
 
-      <div class="hero-stats" data-reveal data-delay="4">
-        <div class="stat"><b data-count="2">0</b><span data-uk="заняття на тиждень">занятия в неделю</span></div>
-        <div class="stat"><b data-count="60">0</b><span data-uk="хвилин урок">минут урок</span></div>
-        <div class="stat"><b data-count="2000">0</b><span data-uk="гривень на місяць">гривен в месяц</span></div>
+      <div class="hero-stats" data-reveal data-delay="5">
+        <div class="stat"><b data-count="2">0</b><span data-ru="занятия в неделю">заняття на тиждень</span></div>
+        <div class="stat"><b data-count="60">0</b><span data-ru="минут урок">хвилин урок</span></div>
+        <div class="stat"><b data-count="2000">0</b><span data-ru="гривен в месяц">гривень на місяць</span></div>
       </div>
     </div>
 
     <div class="hero-figure" data-reveal data-delay="2">
-      <div class="knight-stage">
+      <figure class="hero-photo">
+        <img src="assets/group.webp" alt="Павло Рудяков з учнями на занятті в шаховому клубі «Гамбіт»" width="1600" height="900" loading="eager">
+        <figcaption data-ru="Занятие в шахматном клубе «Гамбит», Киев">Заняття в шаховому клубі «Гамбіт», Київ</figcaption>
+      </figure>
+
+      <div class="knight-stage" aria-hidden="true">
         <div class="knight-3d" id="knight3d">
           <svg class="knight-layer"><use href="#pc-knight"/></svg>
         </div>
@@ -139,17 +147,146 @@
     </div>
   </div>
 
-  <a class="scroll-hint" href="#platform" aria-label="Вниз"><span></span></a>
+  <a class="scroll-hint" href="#coach" aria-label="Вниз"><span></span></a>
+</section>
+
+<!-- ============ ТРЕНЕР ============ -->
+<section class="section" id="coach">
+  <div class="container coach-grid">
+    <div class="coach-photo" data-reveal>
+      <div class="photo-frame">
+        <img src="assets/coach.webp" alt="Павло Рудяков — тренер із шахів клубу «Гамбіт»" loading="lazy" width="1400" height="985">
+      </div>
+      <svg class="photo-piece" aria-hidden="true"><use href="#pc-knight"/></svg>
+    </div>
+
+    <div class="coach-copy">
+      <p class="eyebrow" data-reveal data-ru="Тренер">Тренер</p>
+      <h2 data-reveal data-delay="1" data-ru="Кто будет заниматься с вашим ребёнком">Хто займатиметься з вашою дитиною</h2>
+
+      <p data-reveal data-delay="2" data-ru="Меня зовут Павел Рудяков, я тренер по шахматам в клубе «Гамбит». Веду группы детей в клубе и онлайн: занятия одинаковые по содержанию — я вижу и слышу каждого ребёнка, разбираю его ходы и ошибки прямо на доске, а не где-то потом.">
+        Мене звати Павло Рудяков, я тренер із шахів у клубі «Гамбіт». Веду групи дітей у клубі й онлайн: заняття однакові за змістом — я бачу і чую кожну дитину, розбираю її ходи та помилки прямо на дошці, а не десь потім.
+      </p>
+      <p data-reveal data-delay="3" data-ru="Мне важно, чтобы ребёнок понимал, почему ход хороший, а не заучивал его наизусть. Тогда шахматы перестают быть «ещё одним кружком» и становятся тем, во что хочется играть самому.">
+        Мені важливо, щоб дитина розуміла, чому хід хороший, а не завчила його напам’ять. Тоді шахи перестають бути «ще одним гуртком» і стають тим, у що хочеться грати самому.
+      </p>
+
+      <ul class="ticks">
+        <li data-reveal data-ru="Занятия для детей с любым опытом — от «знаю, как ходит конь» до турнирного уровня">Заняття для дітей із будь-яким досвідом — від «знаю, як ходить кінь» до турнірного рівня</li>
+        <li data-reveal data-delay="1" data-ru="Разбор партий самого ребёнка, а не абстрактные примеры из книжек">Розбір партій дитини, а не абстрактні приклади з книжок</li>
+        <li data-reveal data-delay="2" data-ru="Подготовка к клубным и онлайн-турнирам">Підготовка до клубних та онлайн-турнірів</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ЗАПОЛНИТЕ СВОИМИ ДАННЫМИ: звание/разряд, стаж, число учеников, результаты.
+       Текст в квадратных скобках — заглушки, их нужно заменить. -->
+  <div class="container">
+    <h3 class="sub-head" data-reveal data-ru="Достижения и опыт">Досягнення та досвід</h3>
+    <div class="ach">
+      <div class="ach-card" data-reveal>
+        <b class="ach-value">[звання]</b>
+        <span data-ru="спортивное звание или разряд">спортивне звання або розряд</span>
+      </div>
+      <div class="ach-card" data-reveal data-delay="1">
+        <b class="ach-value">[N]</b>
+        <span data-ru="лет тренерского опыта">років тренерського досвіду</span>
+      </div>
+      <div class="ach-card" data-reveal data-delay="2">
+        <b class="ach-value">[N]</b>
+        <span data-ru="детей занимались в моих группах">дітей навчалися в моїх групах</span>
+      </div>
+      <div class="ach-card" data-reveal data-delay="3">
+        <b class="ach-value">[N]</b>
+        <span data-ru="призовых мест учеников на турнирах">призових місць учнів на турнірах</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ КАК Я ВЕДУ ЗАНЯТИЯ ============ -->
+<section class="section section-alt" id="method">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow" data-reveal data-ru="Занятия">Заняття</p>
+      <h2 data-reveal data-delay="1" data-ru="Как я веду тренировки">Як я веду тренування</h2>
+      <p class="section-lead" data-reveal data-delay="2" data-ru="Две встречи в неделю по 60 минут. Час держится на ритме: теория, практика и разбор идут друг за другом, поэтому ребёнок не успевает устать.">
+        Дві зустрічі на тиждень по 60 хвилин. Година тримається на ритмі: теорія, практика і розбір ідуть один за одним, тож дитина не встигає втомитися.
+      </p>
+    </div>
+
+    <div class="cards">
+      <article class="card card-accent" data-reveal>
+        <div class="card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3v18M5 8l7-5 7 5M5 8v8l7 5 7-5V8"/></svg></div>
+        <h3 data-ru="Объясняю, а не заставляю зубрить">Пояснюю, а не змушую зубрити</h3>
+        <p data-ru="Ребёнок должен понимать идею хода. Заученные варианты забываются за неделю, понятая идея остаётся навсегда.">Дитина має розуміти ідею ходу. Завчені варіанти забуваються за тиждень, зрозуміла ідея залишається назавжди.</p>
+      </article>
+
+      <article class="card" data-reveal data-delay="1">
+        <div class="card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 5h16v14H4z"/><path d="M8 9h8M8 13h5"/></svg></div>
+        <h3 data-ru="Разбираем партии самого ребёнка">Розбираємо партії самої дитини</h3>
+        <p data-ru="Лучший учебник — собственная проигранная партия. Смотрим, где решение сломалось, и что делать в следующий раз.">Найкращий підручник — власна програна партія. Дивимось, де рішення зламалося, і що робити наступного разу.</p>
+      </article>
+
+      <article class="card" data-reveal data-delay="2">
+        <div class="card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="9" r="2.4"/><path d="M3 19c0-3 2.7-5 6-5s6 2 6 5M16 14c3 0 5 2 5 5"/></svg></div>
+        <h3 data-ru="Небольшая группа">Невелика група</h3>
+        <p data-ru="Дети близкого уровня — успеваю к каждому за занятие. Никому не скучно и никому не слишком сложно.">Діти близького рівня — встигаю до кожного за заняття. Нікому не нудно і нікому не занадто складно.</p>
+      </article>
+
+      <article class="card" data-reveal>
+        <div class="card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M7 4h10v5a5 5 0 0 1-10 0z"/><path d="M7 5H4v2a4 4 0 0 0 3 3.8M17 5h3v2a4 4 0 0 1-3 3.8M10 14h4l1 6H9z"/></svg></div>
+        <h3 data-ru="Соревнование как мотивация">Змагання як мотивація</h3>
+        <p data-ru="Турниры клуба и онлайн-турниры: ребёнок играет со сверстниками и сам хочет готовиться к следующей партии.">Турніри клубу та онлайн-турніри: дитина грає з ровесниками і сама хоче готуватися до наступної партії.</p>
+      </article>
+
+      <article class="card" data-reveal data-delay="1">
+        <div class="card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 17l5-6 4 3 5-7 4 4"/><path d="M3 21h18"/></svg></div>
+        <h3 data-ru="Прогресс виден в цифрах">Прогрес видно в цифрах</h3>
+        <p data-ru="Рейтинг, решённые задачи, сыгранные партии. Не «кажется, стало лучше», а факт, который видят и ребёнок, и родители.">Рейтинг, розв’язані задачі, зіграні партії. Не «здається, стало краще», а факт, який видно і дитині, і батькам.</p>
+      </article>
+
+      <article class="card" data-reveal data-delay="2">
+        <div class="card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 12a8 8 0 1 1-3.2-6.4"/><path d="M8 12l3 3 6-7"/></svg></div>
+        <h3 data-ru="Обратная связь родителям">Зворотний зв’язок батькам</h3>
+        <p data-ru="Рассказываю, что выходит, а что нет, и что стоит подтянуть дома. Без общего «всё хорошо».">Розповідаю, що виходить, а що ні, і що варто підтягнути вдома. Без загального «усе добре».</p>
+      </article>
+    </div>
+
+    <h3 class="sub-head" data-reveal data-ru="Как устроен час занятия">Як влаштована година заняття</h3>
+    <ol class="timeline">
+      <li data-reveal>
+        <span class="tl-time">10<i data-ru="мин">хв</i></span>
+        <h3 data-ru="Разминка">Розминка</h3>
+        <p data-ru="Задачи на мат и тактику — чтобы голова включилась с первой минуты.">Задачі на мат і тактику — щоб голова увімкнулася з першої хвилини.</p>
+      </li>
+      <li data-reveal data-delay="1">
+        <span class="tl-time">20<i data-ru="мин">хв</i></span>
+        <h3 data-ru="Новая тема">Нова тема</h3>
+        <p data-ru="Разбираем идею на доске: дебют, приём, эндшпиль. С примерами из партий самих детей.">Розбираємо ідею на дошці: дебют, прийом, ендшпіль. З прикладами з партій самих дітей.</p>
+      </li>
+      <li data-reveal data-delay="2">
+        <span class="tl-time">20<i data-ru="мин">хв</i></span>
+        <h3 data-ru="Практика">Практика</h3>
+        <p data-ru="Играем — один на один, в парах или против тренера. Тему сразу проверяем в бою.">Граємо — один на один, у парах або проти тренера. Тему одразу перевіряємо в бою.</p>
+      </li>
+      <li data-reveal data-delay="3">
+        <span class="tl-time">10<i data-ru="мин">хв</i></span>
+        <h3 data-ru="Разбор и задание">Розбір і завдання</h3>
+        <p data-ru="Смотрим ключевые моменты партий и берём домашнее задание на платформе.">Дивимось ключові моменти партій і беремо домашнє завдання на платформі.</p>
+      </li>
+    </ol>
+  </div>
 </section>
 
 <!-- ============ ПЛАТФОРМА ============ -->
 <section class="section" id="platform">
   <div class="container">
     <div class="section-head">
-      <p class="eyebrow" data-reveal data-uk="Платформа">Платформа</p>
-      <h2 data-reveal data-delay="1" data-uk="Усе заняття — в одному вікні браузера">Всё занятие — в одном окне браузера</h2>
-      <p class="section-lead" data-reveal data-delay="2" data-uk="Ми тренуємось на сучасній шаховій платформі. Нічого встановлювати не потрібно: дитина відкриває посилання — і вона вже на занятті.">
-        Мы тренируемся на современной шахматной платформе. Ничего устанавливать не нужно: ребёнок открывает ссылку — и он уже на занятии.
+      <p class="eyebrow" data-reveal data-ru="Платформа">Платформа</p>
+      <h2 data-reveal data-delay="1" data-ru="Всё занятие — в одном окне браузера">Усе заняття — в одному вікні браузера</h2>
+      <p class="section-lead" data-reveal data-delay="2" data-ru="Мы тренируемся на современной шахматной платформе. Ничего устанавливать не нужно: ребёнок открывает ссылку — и он уже на занятии.">
+        Ми тренуємось на сучасній шаховій платформі. Нічого встановлювати не потрібно: дитина відкриває посилання — і вона вже на занятті.
       </p>
     </div>
 
@@ -158,48 +295,48 @@
         <div class="card-ico">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="2" y="6" width="13" height="12" rx="2.5"/><path d="M15 11l6-3.5v9L15 13z"/></svg>
         </div>
-        <h3 data-uk="Відеозв'язок">Видеосвязь</h3>
-        <p data-uk="Я бачу дитину, дитина бачить мене. Це звичайний живий урок, а не запис відео.">Я вижу ребёнка, ребёнок видит меня. Это обычный живой урок, а не запись видео.</p>
+        <h3 data-ru="Видеосвязь">Відеозв’язок</h3>
+        <p data-ru="Я вижу ребёнка, ребёнок видит меня. Это обычный живой урок, а не запись видео.">Я бачу дитину, дитина бачить мене. Це звичайний живий урок, а не запис відео.</p>
       </article>
 
       <article class="card" data-reveal data-delay="1">
         <div class="card-ico">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="9" y="2.5" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3.5"/></svg>
         </div>
-        <h3 data-uk="Аудіозв'язок">Аудиосвязь</h3>
-        <p data-uk="Пояснюю голосом і відповідаю на питання одразу — дитина не залишається наодинці з незрозумілим ходом.">Объясняю голосом и отвечаю на вопросы сразу — ребёнок не остаётся один на один с непонятным ходом.</p>
+        <h3 data-ru="Аудиосвязь">Аудіозв’язок</h3>
+        <p data-ru="Объясняю голосом и отвечаю на вопросы сразу — ребёнок не остаётся один на один с непонятным ходом.">Пояснюю голосом і відповідаю на питання одразу — дитина не залишається наодинці з незрозумілим ходом.</p>
       </article>
 
       <article class="card card-accent" data-reveal data-delay="2">
         <div class="card-ico">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="2.5"/><path d="M3 9h18M3 15h18M9 3v18M15 3v18"/></svg>
         </div>
-        <h3 data-uk="Ходи на віртуальній дошці">Ходы на виртуальной доске</h3>
-        <p data-uk="Дитина сама пересуває фігури під час заняття — я одразу бачу хід і коментую його.">Ребёнок сам передвигает фигуры во время занятия — я сразу вижу ход и комментирую его.</p>
+        <h3 data-ru="Ходы на виртуальной доске">Ходи на віртуальній дошці</h3>
+        <p data-ru="Ребёнок сам передвигает фигуры во время занятия — я сразу вижу ход и комментирую его.">Дитина сама пересуває фігури під час заняття — я одразу бачу хід і коментую його.</p>
       </article>
 
       <article class="card" data-reveal>
         <div class="card-ico">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3l2.6 5.5 6 .9-4.3 4.2 1 6-5.3-2.8L6.7 19.6l1-6L3.4 9.4l6-.9z"/></svg>
         </div>
-        <h3 data-uk="Задачі та «задача дня»">Задачи и «задача дня»</h3>
-        <p data-uk="Домашнє завдання виглядає як гра: щоденні задачі, серії та рейтинг за розв'язане.">Домашнее задание выглядит как игра: ежедневные задачи, серии и рейтинг за решённое.</p>
+        <h3 data-ru="Задачи и «задача дня»">Задачі та «задача дня»</h3>
+        <p data-ru="Домашнее задание выглядит как игра: ежедневные задачи, серии и рейтинг за решённое.">Домашнє завдання виглядає як гра: щоденні задачі, серії та рейтинг за розв’язане.</p>
       </article>
 
       <article class="card" data-reveal data-delay="1">
         <div class="card-ico">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M7 4h10v5a5 5 0 0 1-10 0z"/><path d="M7 5H4v2a4 4 0 0 0 3 3.8M17 5h3v2a4 4 0 0 1-3 3.8M10 14h4l1 6H9z"/></svg>
         </div>
-        <h3 data-uk="Турніри та кубки клубу">Турниры и кубки клуба</h3>
-        <p data-uk="Регулярні онлайн-турніри всередині клубу: дитина грає з ровесниками, а не тільки з тренером.">Регулярные онлайн-турниры внутри клуба: ребёнок играет со сверстниками, а не только с тренером.</p>
+        <h3 data-ru="Турниры и кубки клуба">Турніри та кубки клубу</h3>
+        <p data-ru="Регулярные онлайн-турниры внутри клуба: ребёнок играет со сверстниками, а не только с тренером.">Регулярні онлайн-турніри всередині клубу: дитина грає з ровесниками, а не тільки з тренером.</p>
       </article>
 
       <article class="card" data-reveal data-delay="2">
         <div class="card-ico">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 17l5-6 4 3 5-7 4 4"/><path d="M3 21h18"/></svg>
         </div>
-        <h3 data-uk="Рейтинг і прогрес">Рейтинг и прогресс</h3>
-        <p data-uk="Зростання видно в цифрах: рейтинг, розв'язані задачі, зіграні партії. Не «здається, стало краще», а факт.">Рост виден в цифрах: рейтинг, решённые задачи, сыгранные партии. Не «кажется, стало лучше», а факт.</p>
+        <h3 data-ru="Рейтинг и прогресс">Рейтинг і прогрес</h3>
+        <p data-ru="Рост виден в цифрах: рейтинг, решённые задачи, сыгранные партии. Не «кажется, стало лучше», а факт.">Зростання видно в цифрах: рейтинг, розв’язані задачі, зіграні партії. Не «здається, стало краще», а факт.</p>
       </article>
     </div>
 
@@ -207,108 +344,32 @@
       <figure class="shot" data-reveal>
         <div class="browser">
           <div class="browser-bar"><i></i><i></i><i></i><span>chess · online</span></div>
-          <img src="assets/platform-board.webp" alt="Виртуальная шахматная доска платформы с записью партии" loading="lazy" width="1600" height="758">
+          <img src="assets/platform-board.webp" alt="Віртуальна шахова дошка платформи із записом партії" loading="lazy" width="1600" height="758">
         </div>
-        <figcaption data-uk="Віртуальна дошка з нотацією партії: дитина ходить сама, а кожен хід залишається в записі — є що розібрати.">Виртуальная доска с записью партии: ребёнок ходит сам, а каждый ход остаётся в нотации — есть что разобрать.</figcaption>
+        <figcaption data-ru="Виртуальная доска с записью партии: ребёнок ходит сам, а каждый ход остаётся в нотации — есть что разобрать.">Віртуальна дошка з нотацією партії: дитина ходить сама, а кожен хід залишається в записі — є що розібрати.</figcaption>
       </figure>
 
       <figure class="shot" data-reveal data-delay="1">
         <div class="browser">
-          <div class="browser-bar"><i></i><i></i><i></i><span>chess · кабинет</span></div>
-          <img src="assets/platform-dashboard.webp" alt="Личный кабинет ученика: турниры, задача дня, рейтинг и кубки" loading="lazy" width="1600" height="762">
+          <div class="browser-bar"><i></i><i></i><i></i><span>chess · кабінет</span></div>
+          <img src="assets/platform-dashboard.webp" alt="Особистий кабінет учня: турніри, задача дня, рейтинг і кубки" loading="lazy" width="1600" height="762">
         </div>
-        <figcaption data-uk="Особистий кабінет учня: найближчий турнір, задача дня, серії та кубки клубу. Дитині хочеться повертатися.">Личный кабинет ученика: ближайший турнир, задача дня, серии и кубки клуба. Ребёнку хочется возвращаться.</figcaption>
+        <figcaption data-ru="Личный кабинет ученика: ближайший турнир, задача дня, серии и кубки клуба. Ребёнку хочется возвращаться.">Особистий кабінет учня: найближчий турнір, задача дня, серії та кубки клубу. Дитині хочеться повертатися.</figcaption>
       </figure>
     </div>
   </div>
 </section>
 
-<!-- ============ ФОРМАТ ============ -->
-<section class="section section-alt" id="format">
-  <div class="container">
-    <div class="section-head">
-      <p class="eyebrow" data-reveal data-uk="Формат">Формат</p>
-      <h2 data-reveal data-delay="1" data-uk="Як проходить заняття">Как проходит занятие</h2>
-      <p class="section-lead" data-reveal data-delay="2" data-uk="Дві зустрічі на тиждень по 60 хвилин. Година тримається на ритмі: теорія, практика і розбір ідуть один за одним, тож дитина не встигає втомитися.">
-        Две встречи в неделю по 60 минут. Час держится на ритме: теория, практика и разбор идут друг за другом, поэтому ребёнок не успевает устать.
-      </p>
-    </div>
-
-    <ol class="timeline">
-      <li data-reveal>
-        <span class="tl-time">10<i data-uk="хв">мин</i></span>
-        <h3 data-uk="Розминка">Разминка</h3>
-        <p data-uk="Задачі на мат і тактику — щоб голова увімкнулася з першої хвилини.">Задачи на мат и тактику — чтобы голова включилась с первой минуты.</p>
-      </li>
-      <li data-reveal data-delay="1">
-        <span class="tl-time">20<i data-uk="хв">мин</i></span>
-        <h3 data-uk="Нова тема">Новая тема</h3>
-        <p data-uk="Розбираємо ідею на дошці: дебют, приём, ендшпіль. З прикладами з партій самих дітей.">Разбираем идею на доске: дебют, приём, эндшпиль. С примерами из партий самих детей.</p>
-      </li>
-      <li data-reveal data-delay="2">
-        <span class="tl-time">20<i data-uk="хв">мин</i></span>
-        <h3 data-uk="Практика">Практика</h3>
-        <p data-uk="Граємо — один на один, у парах або проти тренера. Тему одразу перевіряємо в бою.">Играем — один на один, в парах или против тренера. Тему сразу проверяем в бою.</p>
-      </li>
-      <li data-reveal data-delay="3">
-        <span class="tl-time">10<i data-uk="хв">мин</i></span>
-        <h3 data-uk="Розбір і завдання">Разбор и задание</h3>
-        <p data-uk="Дивимось ключові моменти партій і беремо домашнє завдання на платформі.">Смотрим ключевые моменты партий и берём домашнее задание на платформе.</p>
-      </li>
-    </ol>
-
-    <div class="pills">
-      <div class="pill" data-reveal><svg class="pill-ico"><use href="#pc-pawn"/></svg><b data-uk="Невелика група">Небольшая группа</b><span data-uk="діти близького рівня — встигаю до кожного">дети близкого уровня — успеваю до каждого</span></div>
-      <div class="pill" data-reveal data-delay="1"><svg class="pill-ico"><use href="#pc-rook"/></svg><b data-uk="Стабільний розклад">Стабильное расписание</b><span data-uk="два фіксованих дні на тиждень">два фиксированных дня в неделю</span></div>
-      <div class="pill" data-reveal data-delay="2"><svg class="pill-ico"><use href="#pc-bishop"/></svg><b data-uk="З нуля і далі">С нуля и дальше</b><span data-uk="беру і новачків, і тих, хто вже грає">беру и новичков, и тех, кто уже играет</span></div>
-      <div class="pill" data-reveal data-delay="3"><svg class="pill-ico"><use href="#pc-queen"/></svg><b data-uk="Зворотний зв'язок">Обратная связь</b><span data-uk="розповідаю батькам, що виходить, а що ні">рассказываю родителям, что выходит, а что нет</span></div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ ТРЕНЕР ============ -->
-<section class="section" id="coach">
-  <div class="container coach-grid">
-    <div class="coach-photo" data-reveal>
-      <div class="photo-frame">
-        <img src="assets/coach.webp" alt="Павел Рудяков — тренер по шахматам клуба «Гамбит»" loading="lazy" width="1400" height="985">
-      </div>
-      <svg class="photo-piece" aria-hidden="true"><use href="#pc-knight"/></svg>
-    </div>
-
-    <div class="coach-copy">
-      <p class="eyebrow" data-reveal data-uk="Тренер">Тренер</p>
-      <h2 data-reveal data-delay="1" data-uk="Рудяков Павло Павлович">Рудяков Павел Павлович</h2>
-      <p class="coach-role" data-reveal data-delay="2" data-uk="Тренер з шахів, шаховий клуб «Гамбіт», Київ">Тренер по шахматам, шахматный клуб «Гамбит», Киев</p>
-
-      <p data-reveal data-delay="3" data-uk="Я навчаю дітей шахів у клубі «Гамбіт». Онлайн-група — це той самий живий урок, що й у клубі: я бачу і чую кожну дитину, розбираю її ходи та помилки прямо на дошці, а не десь потім.">
-        Я учу детей шахматам в клубе «Гамбит». Онлайн-группа — это тот же живой урок, что и в клубе: я вижу и слышу каждого ребёнка, разбираю его ходы и ошибки прямо на доске, а не где-то потом.
-      </p>
-      <p data-reveal data-delay="4" data-uk="Мені важливо, щоб дитина розуміла, чому хід хороший, а не завчила його напам'ять. Тоді шахи перестають бути «ще одним гуртком» і стають тим, у що хочеться грати самому.">
-        Мне важно, чтобы ребёнок понимал, почему ход хороший, а не заучивал его наизусть. Тогда шахматы перестают быть «ещё одним кружком» и становятся тем, во что хочется играть самому.
-      </p>
-
-      <ul class="ticks">
-        <li data-reveal data-uk="Заняття для дітей із будь-яким досвідом — від «знаю, як ходить кінь» до турнірного рівня">Занятия для детей с любым опытом — от «знаю, как ходит конь» до турнирного уровня</li>
-        <li data-reveal data-delay="1" data-uk="Розбір партій дитини, а не абстрактні приклади з книжок">Разбор партий самого ребёнка, а не абстрактные примеры из книжек</li>
-        <li data-reveal data-delay="2" data-uk="Підготовка до клубних та онлайн-турнірів">Подготовка к клубным и онлайн-турнирам</li>
-      </ul>
-
-      <a class="link-gold" href="https://club-gambit.kiev.ua/" target="_blank" rel="noopener" data-reveal data-delay="3" data-uk="Сайт клубу «Гамбіт» →">Сайт клуба «Гамбит» →</a>
-    </div>
-  </div>
-</section>
-
-<!-- ============ КЛУБ / АТМОСФЕРА ============ -->
+<!-- ============ КЛУБ ============ -->
 <section class="club" id="club">
-  <div class="club-media">
-    <img src="assets/group.webp" alt="Павел Рудяков с учениками в шахматном клубе «Гамбит»" loading="lazy" width="1600" height="900">
-  </div>
+  <div class="club-board" aria-hidden="true"></div>
   <div class="container club-inner">
-    <blockquote data-reveal data-uk="«Шахи — це спорт, у якому дитина вчиться думати за себе. Дошка не підказує: рішення завжди її».">
-      «Шахматы — это спорт, в котором ребёнок учится думать за себя. Доска не подсказывает: решение всегда его».
+    <img class="club-logo" src="assets/logo.webp" alt="Логотип шахового клубу «Гамбіт»" width="120" height="120" loading="lazy" data-reveal>
+    <blockquote data-reveal data-delay="1" data-ru="«Шахматы — это спорт, в котором ребёнок учится думать за себя. Доска не подсказывает: решение всегда его».">
+      «Шахи — це спорт, у якому дитина вчиться думати за себе. Дошка не підказує: рішення завжди її».
     </blockquote>
-    <p class="club-sign" data-reveal data-delay="1" data-uk="Павло Рудяков, тренер ШК «Гамбіт»">Павел Рудяков, тренер ШК «Гамбит»</p>
+    <p class="club-sign" data-reveal data-delay="2" data-ru="Шахматный клуб «Гамбит» · Киев · с 2009 года">Шаховий клуб «Гамбіт» · Київ · від 2009 року</p>
+    <a class="link-gold" href="https://club-gambit.kiev.ua/" target="_blank" rel="noopener" data-reveal data-delay="3" data-ru="Сайт клуба «Гамбит» →">Сайт клубу «Гамбіт» →</a>
   </div>
 </section>
 
@@ -316,28 +377,28 @@
 <section class="section section-alt" id="price">
   <div class="container">
     <div class="section-head">
-      <p class="eyebrow" data-reveal data-uk="Вартість">Стоимость</p>
-      <h2 data-reveal data-delay="1" data-uk="Одна ціна — і нічого зверху">Одна цена — и ничего сверху</h2>
+      <p class="eyebrow" data-reveal data-ru="Стоимость">Вартість</p>
+      <h2 data-reveal data-delay="1" data-ru="Одна цена — и ничего сверху">Одна ціна — і нічого зверху</h2>
     </div>
 
     <div class="price-wrap">
       <div class="price-card" data-reveal data-delay="2">
         <div class="price-glow" aria-hidden="true"></div>
-        <p class="price-label" data-uk="Онлайн-група">Онлайн-группа</p>
+        <p class="price-label" data-ru="Онлайн-группа">Онлайн-група</p>
         <p class="price-value"><b data-count="2000">0</b><span>₴</span></p>
-        <p class="price-period" data-uk="на місяць · 8 занять">в месяц · 8 занятий</p>
+        <p class="price-period" data-ru="в месяц · 8 занятий">на місяць · 8 занять</p>
 
         <ul class="price-list">
-          <li data-uk="2 заняття на тиждень по 60 хвилин">2 занятия в неделю по 60 минут</li>
-          <li data-uk="Живий відео- та аудіозв'язок із тренером">Живая видео- и аудиосвязь с тренером</li>
-          <li data-uk="Доступ до платформи: дошка, задачі, партії">Доступ к платформе: доска, задачи, партии</li>
-          <li data-uk="Домашні завдання та їх розбір">Домашние задания и их разбор</li>
-          <li data-uk="Участь у турнірах і кубках клубу">Участие в турнирах и кубках клуба</li>
-          <li data-uk="Зворотний зв'язок батькам про прогрес">Обратная связь родителям о прогрессе</li>
+          <li data-ru="2 занятия в неделю по 60 минут">2 заняття на тиждень по 60 хвилин</li>
+          <li data-ru="Живая видео- и аудиосвязь с тренером">Живий відео- та аудіозв’язок із тренером</li>
+          <li data-ru="Доступ к платформе: доска, задачи, партии">Доступ до платформи: дошка, задачі, партії</li>
+          <li data-ru="Домашние задания и их разбор">Домашні завдання та їх розбір</li>
+          <li data-ru="Участие в турнирах и кубках клуба">Участь у турнірах і кубках клубу</li>
+          <li data-ru="Обратная связь родителям о прогрессе">Зворотний зв’язок батькам про прогрес</li>
         </ul>
 
-        <a class="btn btn-gold btn-wide" href="#contact" data-uk="Записати дитину">Записать ребёнка</a>
-        <p class="price-note" data-uk="Напишіть мені — підберемо зручний час і групу за рівнем дитини.">Напишите мне — подберём удобное время и группу по уровню ребёнка.</p>
+        <a class="btn btn-gold btn-wide" href="#contact" data-ru="Записать ребёнка">Записати дитину</a>
+        <p class="price-note" data-ru="Напишите мне — подберём удобное время и группу по уровню ребёнка.">Напишіть мені — підберемо зручний час і групу за рівнем дитини.</p>
       </div>
 
       <svg class="price-piece" aria-hidden="true"><use href="#pc-king"/></svg>
@@ -349,34 +410,34 @@
 <section class="section" id="faq">
   <div class="container">
     <div class="section-head">
-      <p class="eyebrow" data-reveal data-uk="Питання">Вопросы</p>
-      <h2 data-reveal data-delay="1" data-uk="Що зазвичай запитують батьки">Что обычно спрашивают родители</h2>
+      <p class="eyebrow" data-reveal data-ru="Вопросы">Питання</p>
+      <h2 data-reveal data-delay="1" data-ru="Что обычно спрашивают родители">Що зазвичай запитують батьки</h2>
     </div>
 
     <div class="faq">
       <details data-reveal>
-        <summary data-uk="З якого віку можна займатися?">С какого возраста можно заниматься?</summary>
-        <p data-uk="Зазвичай з 5–6 років — якщо дитина спокійно тримає увагу біля екрана близько години. Точніше скажу після короткого знайомства: подивлюся, як дитина реагує на дошку.">Обычно с 5–6 лет — если ребёнок спокойно держит внимание у экрана около часа. Точнее скажу после короткого знакомства: посмотрю, как ребёнок реагирует на доску.</p>
+        <summary data-ru="С какого возраста можно заниматься?">З якого віку можна займатися?</summary>
+        <p data-ru="Обычно с 5–6 лет — если ребёнок спокойно держит внимание у экрана около часа. Точнее скажу после короткого знакомства: посмотрю, как ребёнок реагирует на доску.">Зазвичай з 5–6 років — якщо дитина спокійно тримає увагу біля екрана близько години. Точніше скажу після короткого знайомства: подивлюся, як дитина реагує на дошку.</p>
       </details>
       <details data-reveal data-delay="1">
-        <summary data-uk="А якщо дитина зовсім не вміє грати?">А если ребёнок совсем не умеет играть?</summary>
-        <p data-uk="Це нормальна точка старту. Беру і повних новачків, і тих, хто вже грає: групи формую за рівнем, щоб нікому не було ні нудно, ні надто складно.">Это нормальная точка старта. Беру и полных новичков, и тех, кто уже играет: группы формирую по уровню, чтобы никому не было ни скучно, ни слишком сложно.</p>
+        <summary data-ru="А если ребёнок совсем не умеет играть?">А якщо дитина зовсім не вміє грати?</summary>
+        <p data-ru="Это нормальная точка старта. Беру и полных новичков, и тех, кто уже играет: группы формирую по уровню, чтобы никому не было ни скучно, ни слишком сложно.">Це нормальна точка старту. Беру і повних новачків, і тих, хто вже грає: групи формую за рівнем, щоб нікому не було ні нудно, ні надто складно.</p>
       </details>
       <details data-reveal data-delay="2">
-        <summary data-uk="Що потрібно з техніки?">Что нужно из техники?</summary>
-        <p data-uk="Комп'ютер або ноутбук з камерою та мікрофоном, стабільний інтернет і браузер. Планшет теж підходить, але за комп'ютером дитині зручніше рухати фігури.">Компьютер или ноутбук с камерой и микрофоном, стабильный интернет и браузер. Планшет тоже подходит, но за компьютером ребёнку удобнее двигать фигуры.</p>
+        <summary data-ru="Что нужно из техники?">Що потрібно з техніки?</summary>
+        <p data-ru="Компьютер или ноутбук с камерой и микрофоном, стабильный интернет и браузер. Планшет тоже подходит, но за компьютером ребёнку удобнее двигать фигуры.">Комп’ютер або ноутбук з камерою та мікрофоном, стабільний інтернет і браузер. Планшет теж підходить, але за комп’ютером дитині зручніше рухати фігури.</p>
       </details>
       <details data-reveal data-delay="3">
-        <summary data-uk="А якщо пропустили заняття?">А если пропустили занятие?</summary>
-        <p data-uk="Дам завдання на платформі, щоб дитина не випала з теми, і повернемося до неї на наступному занятті.">Дам задание на платформе, чтобы ребёнок не выпал из темы, и вернёмся к ней на следующем занятии.</p>
+        <summary data-ru="А если пропустили занятие?">А якщо пропустили заняття?</summary>
+        <p data-ru="Дам задание на платформе, чтобы ребёнок не выпал из темы, и вернёмся к ней на следующем занятии.">Дам завдання на платформі, щоб дитина не випала з теми, і повернемося до неї на наступному занятті.</p>
       </details>
       <details data-reveal data-delay="4">
-        <summary data-uk="Чи потрібно батькам сидіти поруч?">Нужно ли родителям сидеть рядом?</summary>
-        <p data-uk="Перші заняття — бажано, просто щоб допомогти з технікою. Далі діти чудово справляються самі: вхід на платформу займає один клік.">Первые занятия — желательно, просто чтобы помочь с техникой. Дальше дети отлично справляются сами: вход на платформу занимает один клик.</p>
+        <summary data-ru="Нужно ли родителям сидеть рядом?">Чи потрібно батькам сидіти поруч?</summary>
+        <p data-ru="Первые занятия — желательно, просто чтобы помочь с техникой. Дальше дети отлично справляются сами: вход на платформу занимает один клик.">Перші заняття — бажано, просто щоб допомогти з технікою. Далі діти чудово справляються самі: вхід на платформу займає один клік.</p>
       </details>
       <details data-reveal data-delay="5">
-        <summary data-uk="Як записатися?">Как записаться?</summary>
-        <p data-uk="Напишіть мені в месенджер: обговоримо рівень дитини, зручний час і найближчий старт групи.">Напишите мне в мессенджер: обсудим уровень ребёнка, удобное время и ближайший старт группы.</p>
+        <summary data-ru="Как записаться?">Як записатися?</summary>
+        <p data-ru="Напишите мне в мессенджер: обсудим уровень ребёнка, удобное время и ближайший старт группы.">Напишіть мені в месенджер: обговоримо рівень дитини, зручний час і найближчий старт групи.</p>
       </details>
     </div>
   </div>
@@ -387,9 +448,9 @@
   <div class="cta-board" aria-hidden="true"></div>
   <div class="container cta-inner">
     <svg class="cta-knight" aria-hidden="true"><use href="#pc-knight"/></svg>
-    <h2 data-reveal data-uk="Наступна група вже набирається">Следующая группа уже набирается</h2>
-    <p data-reveal data-delay="1" data-uk="Напишіть — розповім про вільні місця, час занять і те, з чого почнемо саме з вашою дитиною.">
-      Напишите — расскажу о свободных местах, времени занятий и о том, с чего начнём именно с вашим ребёнком.
+    <h2 data-reveal data-ru="Следующая группа уже набирается">Наступна група вже набирається</h2>
+    <p data-reveal data-delay="1" data-ru="Напишите — расскажу о свободных местах, времени занятий и о том, с чего начнём именно с вашим ребёнком.">
+      Напишіть — розповім про вільні місця, час занять і те, з чого почнемо саме з вашою дитиною.
     </p>
 
     <!-- ЗАМЕНИТЕ КОНТАКТЫ НА СВОИ: ник в Telegram, номер телефона, e-mail -->
@@ -399,7 +460,7 @@
       <a class="btn btn-ghost" href="tel:+380000000000">+380 00 000 00 00</a>
     </div>
 
-    <p class="cta-note" data-reveal data-delay="3" data-uk="Шаховий клуб «Гамбіт», Київ · club-gambit.kiev.ua">Шахматный клуб «Гамбит», Киев · club-gambit.kiev.ua</p>
+    <p class="cta-note" data-reveal data-delay="3" data-ru="Шахматный клуб «Гамбит», Киев · club-gambit.kiev.ua">Шаховий клуб «Гамбіт», Київ · club-gambit.kiev.ua</p>
   </div>
 </section>
 
@@ -410,13 +471,13 @@
     <div class="footer-brand">
       <img src="assets/logo.webp" alt="" width="40" height="40" loading="lazy">
       <div>
-        <b data-uk="Рудяков Павло Павлович">Рудяков Павел Павлович</b>
-        <span data-uk="тренер з шахів · клуб «Гамбіт», Київ">тренер по шахматам · клуб «Гамбит», Киев</span>
+        <b data-ru="Рудяков Павел Павлович">Рудяков Павло Павлович</b>
+        <span data-ru="тренер по шахматам · клуб «Гамбит», Киев">тренер із шахів · клуб «Гамбіт», Київ</span>
       </div>
     </div>
     <div class="footer-links">
       <a href="https://club-gambit.kiev.ua/" target="_blank" rel="noopener">club-gambit.kiev.ua</a>
-      <a href="#hero" data-uk="Нагору ↑">Наверх ↑</a>
+      <a href="#hero" data-ru="Наверх ↑">Нагору ↑</a>
     </div>
   </div>
 </footer>
